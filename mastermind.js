@@ -1,4 +1,4 @@
 function addspace() {
-  document.getElementById("foo").innerHTML="nbsp;"+document.getElementById("foo").innerHTML
+  document.getElementById("foo").innerHTML="nbsp;"+document.getElementById("foo").innerHTML;
 }
 
