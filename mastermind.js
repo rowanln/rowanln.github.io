@@ -1,4 +1,4 @@
 function addspace() {
-  document.getElementById("foo").style.paddingLeft="0.001"+document.getElementById("foo").style.paddingLeft;
+  document.getElementById("foo").style.paddingLeft="1"+document.getElementById("foo").style.paddingLeft;
 }
 
