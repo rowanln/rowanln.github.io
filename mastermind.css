@@ -1,5 +1,6 @@
-#foo {
-  color:red;
-  font-weight:bold;
-  font-size:200%;
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
 }
