@@ -1,5 +1,5 @@
 function changeColor(element) {
-  element.style.backgroundColor = randomColor():
+  element.style.backgroundColor = randomColor();
 }
 
 var colors = ["red", "green", "pink", "purple", "blue", "yellow", "orange"];
