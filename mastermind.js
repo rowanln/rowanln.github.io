@@ -10,7 +10,7 @@ function randomColor() {
 }
 
 function buildPalette() {
-  var palette = document.getElementById(palette);
+  var palette = document.getElementById("palette");
   var paletteColor = palette.children[0];
   for(var i = 0; i < colors.length; i++) {
     var clone = paletteColor.cloneNode(true);
