@@ -23,3 +23,14 @@ function buildPalette() {
 function buildPage() {
   buildPalette();
 }
+
+function changePaletteSelection(element) {
+  for(var i = 0; i < element.parentNode.childElementCount; i++) {
+    var color = element.parentNode.children[i];
+    if (color == element) {
+      color.classList.add("selected");
+    } else {
+      color.classList.remove("selected");
+    }
+  }
+}
