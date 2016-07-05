@@ -7,3 +7,6 @@
   border-radius: 50%;
   border: 2px solid black;
 }
+.selected {
+  border-width: 4px;
+}
