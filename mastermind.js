@@ -17,6 +17,7 @@ function buildPalette() {
     clone.style.backgroundColor = colors[i];
     palette.appendChild(clone);
   }
+  palette.removeChild(paletteColor);
 }
 
 function buildPage() {
