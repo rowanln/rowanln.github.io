@@ -3,6 +3,7 @@ function changeColor(element) {
 }
 
 var colors = ["red", "green", "purple", "blue", "yellow", "orange"];
+var game = initializeGame(4, 12);
 
 function randomColor() {
  var index = Math.floor(Math.random() * colors.length);
@@ -22,6 +23,7 @@ function buildPalette() {
 
 function buildPage() {
   buildPalette();
+  console.log(game);
 }
 
 function changePaletteSelection(element) {
@@ -33,4 +35,15 @@ function changePaletteSelection(element) {
       color.classList.remove("selected");
     }
   }
+}
+function initializeGame(width, height) {
+  var game = new Object();
+  game.width = width;
+  game.height = height;
+  game.guessNumber = 0;
+  game.selected = 0;
+  game.secret = [];
+  game.currentGuess = [];
+  game.checkCurrent = function(){};
+  return game;
 }
