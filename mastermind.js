@@ -19,6 +19,7 @@ function drawPalette() {
     palette.appendChild(clone);
   }
   palette.removeChild(paletteColor);
+  changePaletteSelection(palette.children[0]);
 }
 
 function changePaletteSelection(element) {
