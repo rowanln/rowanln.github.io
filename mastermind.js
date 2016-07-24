@@ -16,6 +16,7 @@ function drawPalette() {
   for(var i = 0; i < colors.length; i++) {
     var clone = paletteColor.cloneNode(true);
     clone.style.backgroundColor = colors[i];
+    clone.selectionColor = i;
     palette.appendChild(clone);
   }
   palette.removeChild(paletteColor);
@@ -28,9 +29,11 @@ function changePaletteSelection(element) {
     if (color == element) {
       color.classList.add("selected");
     } else {
-      color.classList.remove("selected");
+      color.classList.remove("selected")
     }
   }
+  game.selected = element.selectionColor;
+  console.log(game);
 }
 
 function initializeGame(width, height) {
