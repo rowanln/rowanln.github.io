@@ -10,7 +10,7 @@ function randomColor() {
  return colors[index];
 }
 
-function buildPalette() {
+function drawPallete() {
   var palette = document.getElementById("palette");
   var paletteColor = palette.children[0];
   for(var i = 0; i < colors.length; i++) {
@@ -42,7 +42,7 @@ function initializeGame(width, height) {
   game.currentGuess = [];
   game.checkCurrent = function(){};
   game.draw = function() {
-    buildPalette();
+    drawPalette();
     console.log(game);
   };
   return game;
