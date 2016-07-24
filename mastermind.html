@@ -7,8 +7,14 @@
     <link rel="stylesheet" type="text/css" href="mastermind.css">
   </head>
   <body onload="game.draw();"> 
+    <div id="rows">
+      <div class="rowColor" onclick="changeGuess(this);"></div>
+    </div> 
     <div id="palette">
       <div class="paletteColor" onclick="changePaletteSelection(this);"></div>
+    </div> 
+    <div id="secret">
+      <div class="secretColor"></div>
     </div> 
   </body>
 </html>
