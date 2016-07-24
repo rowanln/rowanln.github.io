@@ -64,12 +64,12 @@ function createSecret(width) {
 function drawRows(width, height) {
   
 }
-function drawSecret(secret) {
+function drawSecret(secretColors) {
   var secret = document.getElementById("secret");
   var secretColor = secret.children[0];
-  for(var i = 0; i < secret.length; i++) {
+  for(var i = 0; i < secretColors.length; i++) {
     var clone = secretColor.cloneNode(true);
-    clone.style.backgroundColor = secret[i];
+    clone.style.backgroundColor = secretColors[i];
     secret.appendChild(clone);
   }
   secret.removeChild(secretColor);
