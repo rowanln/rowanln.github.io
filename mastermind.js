@@ -57,7 +57,7 @@ function initializeGame(width, height) {
 function createSecret(width) {
   var secret = [];
   for (var i = 0; i<width; i++) {
-    secret.push(randomColor);
+    secret.push(randomColor());
   }
   return secret;
 }
@@ -65,5 +65,12 @@ function drawRows(width, height) {
   
 }
 function drawSecret(secret) {
-  
+  var secret = document.getElementById("secret");
+  var secretColor = secret.children[0];
+  for(var i = 0; i < secret.length; i++) {
+    var clone = secretColor.cloneNode(true);
+    clone.style.backgroundColor = secret[i];
+    secret.appendChild(clone);
+  }
+  secret.removeChild(secretColor);
 }
