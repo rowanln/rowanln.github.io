@@ -10,3 +10,14 @@
 .selected {
   border-width: 4px;
 }
+
+.rowColor .secretColor { 
+  margin: 3px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+
