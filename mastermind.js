@@ -38,12 +38,28 @@ function initializeGame(width, height) {
   game.height = height;
   game.guessNumber = 0;
   game.selected = 0;
-  game.secret = [];
+  game.secret = createSecret(width);
   game.currentGuess = [];
   game.checkCurrent = function(){};
   game.draw = function() {
     drawPalette();
+    drawSecret(this.secret);
+    drawRows(width, height);
     console.log(game);
   };
   return game;
+}
+
+function createSecret(width) {
+  var secret = [];
+  for (var i = 0; i<width; i++) {
+    secret.push(randomColor);
+  }
+  return secret;
+}
+function drawRows(width, height) {
+  
+}
+function drawSecret(secret) {
+  
 }
