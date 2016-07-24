@@ -10,7 +10,7 @@ function randomColor() {
  return colors[index];
 }
 
-function drawPallete() {
+function drawPalette() {
   var palette = document.getElementById("palette");
   var paletteColor = palette.children[0];
   for(var i = 0; i < colors.length; i++) {
