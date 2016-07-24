@@ -21,11 +21,6 @@ function buildPalette() {
   palette.removeChild(paletteColor);
 }
 
-function buildPage() {
-  buildPalette();
-  console.log(game);
-}
-
 function changePaletteSelection(element) {
   for(var i = 0; i < element.parentNode.childElementCount; i++) {
     var color = element.parentNode.children[i];
@@ -36,6 +31,7 @@ function changePaletteSelection(element) {
     }
   }
 }
+
 function initializeGame(width, height) {
   var game = new Object();
   game.width = width;
@@ -45,5 +41,9 @@ function initializeGame(width, height) {
   game.secret = [];
   game.currentGuess = [];
   game.checkCurrent = function(){};
+  game.draw = function() {
+    buildPalette();
+    console.log(game);
+  };
   return game;
 }
